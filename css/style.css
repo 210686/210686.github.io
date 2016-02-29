@@ -210,7 +210,7 @@ ul#menu li:hover a
 #content
 { width: 680px;
   margin-bottom: 20px;
-  float: left;}
+  float: right;}
 
 .content_item
 { width: 680px;
@@ -414,5 +414,8 @@ ul img {
 #slideshow-caption p {
   padding: 0;
   font: normal 130% arial, sans-serif;
-  color: #FFF;}
+  color: blue;}
  
+ #contactbox {
+  float: right;
+ }
