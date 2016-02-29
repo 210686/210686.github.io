@@ -83,20 +83,21 @@
 	   
       <h2>Contact Me</h2>
             <p>Please fill out this form in order to have advce or feedback. Do not spam, but the message will be thanked.</p>
-            <form method="post" action="contact.php">
+            <form method="post" action="send: 210686@hkis.edu.hk">
 	<div class="contact">
 		<label for="name"  style="color: white;">Name:</label><br />
-		<input id="name" class="input" name="name" type="text" value="" size="30"/><br />
+		<input id="name" class="input" name="name" type="text" placeholder="Enter your name here" size="30"/><br />
 	</div>
 	<div class="contact">
 		<label for="email"  style="color: white;">Email:</label><br />
-		<input id="email" class="input" name="email" type="text" value="" size="30"/><br />
+		<input id="email" class="input" name="email" type="text" placeholder="Enter your mail address here" size="30"/><br />
 	</div>
 	<div class="contact">
 		<label for="message"  style="color: white;">Message:</label><br />
-		<textarea id="message" class="input" name="message" rows="7" cols="30"/></textarea><br />
+		<textarea id="message" class="input" name="message" rows="7" placeholder="Enter message here" cols="30"/></textarea><br />
 	</div>
-	<input id="submit_button" type="submit" type="reset" value="Send" mailto="210686@hkis.edu.hk"/>
+	<input id="contact_submitted" class="submit" type="submit" value="Send"/>
+	<input type="reset" value="Reset">
 </form>						
         </div><!--close form-->
         </div>
