@@ -1,3 +1,4 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 
@@ -69,32 +70,37 @@
         </div><!--close sidebar-->      
         </div>
   
+ 
   <div class="slideshow">
       <ul class="slideshow">
           <li class="show"><img width="680" height="250" src="http://blog-imgs-50.fc2.com/k/u/r/kuronomon/gokurin.png" alt="Love them!" /></li>
           <li><img width="680" height="250" src="http://panic.in/pakuki/gokurin.PNG" alt="Chase your dreams"/></li>
         </ul>
-      </div>       
+      </div>      
+        <div id="content">
+        <div class="content_item">
+            <div class="content_container">        
 	   
-      <div id="contactbox">
       <h2>Contact Me</h2>
-            <p>A contact form requires some method of emailing the contents of the form to an email address. The most common way to do this is to use some kind of server script (PHP for example). I would be happy to send you the PHP code for the contact form for your chosen template, I charge £20.00GBP for this. Simply contact me for more details.</p>
-            <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+            <p>Please fill out this form in order to have advce or feedback. Do not spam, but the message will be thanked.</p>
+            <form method="post" action="contact.php">
 	<div class="contact">
-		<label for="name">Name:</label><br />
-		<input id="name" class="input" name="name" type="text" value="" size="30"  style="color: white;"/><br />
+		<label for="name"  style="color: white;">Name:</label><br />
+		<input id="name" class="input" name="name" type="text" value="" size="30"/><br />
 	</div>
 	<div class="contact">
-		<label for="email">Email:</label><br />
-		<input id="email" class="input" name="email" type="text" value="" size="30"  style="color: white;"/><br />
+		<label for="email"  style="color: white;">Email:</label><br />
+		<input id="email" class="input" name="email" type="text" value="" size="30"/><br />
 	</div>
 	<div class="contact">
-		<label for="message">Message:</label><br />
-		<textarea id="message" class="input" name="message" rows="7" cols="30"  style="color: white;"></textarea><br />
+		<label for="message"  style="color: white;">Message:</label><br />
+		<textarea id="message" class="input" name="message" rows="7" cols="30"/></textarea><br />
 	</div>
-	<input id="submit_button" type="submit" value="Send email"/>
+	<input id="submit_button" type="submit" type="reset" value="Send" mailto="210686@hkis.edu.hk"/>
 </form>						
         </div><!--close form-->
+        </div>
+        </div>
         </div>
     </div>
    </body>
