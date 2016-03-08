@@ -1,4 +1,4 @@
-<<?php
+<?php
 /* Set e-mail recipient */
 $myemail  = "210686@hkis.edu.hk";
 
