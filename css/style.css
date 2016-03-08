@@ -419,3 +419,19 @@ ul img {
  #contactbox {
   float: right;
  }
+
+ .news_item {
+  float: none;
+ }
+
+ #news_one {
+  background-image: url(http://ichef-1.bbci.co.uk/news/624/cpsprodpb/5906/production/_88609722_88609473.jpg);
+  opacity: 0.6;
+  height: 416px;
+  width: 625px;
+  font-size: 30px;
+ }
+
+ #new_one {
+  color: #8B0000;
+ }
