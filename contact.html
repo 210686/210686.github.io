@@ -1,13 +1,33 @@
 
 <?php
-// the message
-$msg = "First line of text\nSecond line of text";
+$field_name = $_POST['cf_name'];
+$field_email = $_POST['cf_email'];
+$field_message = $_POST['cf_message'];
 
-// use wordwrap() if lines are longer than 70 characters
-$msg = wordwrap($msg,70);
+$mail_to = '210686@hkis.edu.hk';
+$subject = 'Message from Gokurin News'.$field_name;
 
-// send email
-mail("210686@hkis.edu.hk","My subject",$msg);
+$body_message = 'From: '.$field_name."\n";
+$body_message .= 'E-mail: '.$field_email."\n";
+$body_message .= 'Message: '.$field_message;
+
+$headers = 'From: '.$field_email."\r\n";
+$headers .= 'Reply-To: '.$field_email."\r\n";
+
+$mail_status = mail($mail_to, $subject, $body_message, $headers);
+
+if ($mail_status) { ?>
+    <script>
+    	alert('Message Sent');
+    </script>
+<?php
+}
+else { ?>
+	<script>
+		alert('Message sending failed');
+	</script>
+<?php
+}
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
@@ -93,59 +113,22 @@ mail("210686@hkis.edu.hk","My subject",$msg);
 	   
       <h2>Contact Me</h2>
             <p>Please fill out this form in order to have advce or feedback. Do not spam, but the message will be thanked.</p>
- <form name="htmlform" method="post" action="html_form_send.php">
-<table width="450px">
-</tr>
-<tr>
- <td valign="top">
-  <label for="first_name">First Name *</label>
- </td>
- <td valign="top">
-  <input  type="text" name="first_name" maxlength="50" size="30">
- </td>
-</tr>
- 
-<tr>
- <td valign="top">
-  <label for="last_name">Last Name *</label>
- </td>
- <td valign="top">
-  <input  type="text" name="last_name" maxlength="50" size="30">
- </td>
-</tr>
-<tr>
- <td valign="top">
-  <label for="email">Email Address *</label>
- </td>
- <td valign="top">
-  <input  type="text" name="email" maxlength="80" size="30">
- </td>
- 
-</tr>
-<tr>
- <td valign="top">
-  <label for="telephone">Telephone Number</label>
- </td>
- <td valign="top">
-  <input  type="text" name="telephone" maxlength="30" size="30">
- </td>
-</tr>
-<tr>
- <td valign="top">
-  <label for="comments">Comments *</label>
- </td>
- <td valign="top">
-  <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
- </td>
- 
-</tr>
-<tr>
- <td colspan="2" style="text-align:center">
-  <input type="submit" value="Submit">
- </td>
-</tr>
-</table>
-</form>
+            <form method="post" action="html_form_send.php">
+	<div class="contact">
+		<label for="name"  style="color: white;">Name:</label><br />
+		<input name="cf_name" type="text" placeholder="Enter your name here" size="30"/><br />
+	</div>
+	<div class="contact">
+		<label for="email"  style="color: white;">Email:</label><br />
+		<input  name="cf_email" type="text" placeholder="Enter your mail address here" size="30"/><br />
+	</div>
+	<div class="contact">
+		<label for="message"  style="color: white;">Message:</label><br />
+		<textarea name="cf_message" rows="7" placeholder="Enter message here" cols="30"/></textarea><br />
+	</div>
+	<input id="contact_submitted" class="submit" type="submit" value="Send"/>
+	<input type="reset" value="Reset">
+</form>					
         </div><!--close form-->
         </div>
         </div>
