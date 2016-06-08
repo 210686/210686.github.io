@@ -1,0 +1,157 @@
+body {
+
+	background-image: url("img/start.jpg");
+    background-size: cover;
+    background-position: center center;
+	font-family: monospace;
+
+}
+
+/*Stuff below governs the start screen*/
+
+.titleContent {
+	margin: 10% auto;
+    text-align: center;
+}
+
+.splashTitle {
+	color: blue;
+    font-size: 8em;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 5px rgba(27, 25, 25, 0.74);
+}
+
+#stbutton {
+	border: 5px solid #383838;
+    color: #383838;
+    padding: 20px 50px;
+    font-size: 6em;
+    text-decoration: none;
+    background-color: #abc;
+    box-shadow: 15px 15px 80px #555;
+}
+
+/*Stuff below governs the Explore screen*/
+
+#exploreBody {
+	background-image: url("img/pic1.jpg");
+	background-position: bottom center;
+
+}
+
+.button {
+    border: 5px solid #383838;
+    color: #383838;
+    padding: 20px 50px;
+    font-size: 5em;
+    text-decoration: none;
+    background-color: #abc;
+    box-shadow: 15px 15px 80px #555;
+    position: absolute;
+}
+
+.right {
+    right: 0px;
+    top: 350px;
+}
+
+.left {
+    left: 0px;
+    top: 350px;
+}
+
+.top {
+    top: 8px;
+    left: 640px;
+}
+
+.bottom {
+    bottom: 8px;
+    right: 640px;
+}
+
+#puzfive {
+    height: 90px;
+    width: 1px;
+    position: absolute;
+    right: 175px;
+    bottom: 460px;
+    opacity: 0.03;
+}
+
+#puzsix {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    left: 760px;
+    top: 411px;
+    opacity: 0.1;
+}
+
+.hint {
+    height: 50px;
+    width: 250px;
+    position: absolute;
+    bottom: 465px;
+}
+
+#hone {
+    right: 5px;
+}
+
+#htwo {
+    left: 975px;
+}
+
+#hammer {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 510px;
+    bottom: 110px;
+    opacity: 0.025;
+}
+
+#etwo {
+    width: 180px;
+    height: 135px;
+    position: absolute;
+    right: 745px;
+    top: 225px;
+    opacity: 1;   
+    background-color: black;
+}
+
+.endtext {
+    font-size: 100px;
+    text-align: center;
+}
+
+.hennano {
+    color: red;
+    height: 880px;
+    width: 1440px;
+    background-image: url("img/fire.gif-c200");
+    background-size: 1440px 880px;
+    position: absolute;
+}
+
+.snow {
+    background-image: url("img/snow.gif");
+    font-size: 100px;
+    color: blue;
+    height: 880px;
+    width: 1440px;
+    background-size: 1440px 880px;
+    position: absolute;
+}
+
+.forest {
+    background-image: url("img/leaves.gif");
+    font-size: 100px;
+    color: green;
+    height: 880px;
+    width: 1440px;
+    background-size: 1440px 880px;
+    position: absolute;
+}
