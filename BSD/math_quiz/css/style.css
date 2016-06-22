@@ -1,0 +1,18 @@
+#button{
+  width: 200px;
+  height:200px;
+  font-size: 50px;
+  color: #4DAC26;
+  position: absolute;
+  left: 85px;
+}
+#title{
+  color: #D01C8B;
+  font-size: 50px;
+}
+
+#background{
+  background-color: #1ECCF3;
+  width: 350px;
+  height: 350px;
+}
